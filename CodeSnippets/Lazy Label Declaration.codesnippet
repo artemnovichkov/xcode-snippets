@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazy_ll</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private(set) lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 16, weight: UIFont.Weight.regular)
+        label.textColor = .black
+        return label
+    }()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>89F601AC-2C61-4733-AD43-2B6586D2EF4A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Lazy label as property</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Lazy Label Declaration</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

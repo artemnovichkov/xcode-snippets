@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazy_tvm</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>fileprivate lazy var tableViewManager: TableViewManager = {
+        return TableViewManager(tableView: self.tableView)
+    }()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E178BC75-409A-4CE4-BA11-0D13CA8956AF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Lazy Table View Manager as property</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Lazy TableViewManager Declaration</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
