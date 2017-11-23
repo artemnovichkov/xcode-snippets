@@ -1,9 +1,33 @@
 # Xcode Snippets
 My personal Xcode snippets
-## List
+## Usage
+- Associated Object Declaration
+```swift
+private struct AssociatedKeys {
+    static var <#name#> = "<#name#>"
+}
+
+var <#name#>: String? {
+    get {
+        return objc_getAssociatedObject(self, &AssociatedKeys.<#name#>) as? String
+    }
+
+    set {
+        if let newValue = newValue {
+            objc_setAssociatedObject(self, &AssociatedKeys.<#name#>, newValue as String?, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+}
+```
 - Delay for calling (`async_after`)
 ```swift
-DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+DispatchQueue.main.asyncAfter(deadline: .now() + <#when: dispatch_time_t#>) {
+}
+```
+- Guard Self Declaration
+```swift
+guard let `self` = self else {
+    return
 }
 ```
 - Lazy Button Declaration (`lazy_button`)
@@ -41,7 +65,7 @@ fileprivate lazy var tableViewManager: TableViewManager = {
 ```
 - Mark snippet (`mark`)
 ```swift
-// MARK: - Title
+// MARK: - <#Title#>
 ```
 - Protocol Function Declaration (`funcp`)
 ```swift
