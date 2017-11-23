@@ -62,7 +62,16 @@ override func viewDidAppear(_ animated: Bool) {
 
 ## Installation
 
-Copy the snippets to `~/Library/Developer/Xcode/UserData/CodeSnippets`.
+### Manual
+
+Drag `.codesnippet` files into `~/Library/Developer/Xcode/UserData/CodeSnippets`.
+
+### Automatic
+
+Run the command in your terminal:
+```bash
+curl -fsSL https://raw.githubusercontent.com/artemnovichkov/xcode-snippets/master/install.sh | sh
+```
 
 ## Author
 
