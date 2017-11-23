@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>private(set) lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16, weight: UIFont.Weight.regular)
+        label.font = .systemFont(ofSize: 17, weight: .regular)
         label.textColor = .black
         return label
     }()</string>

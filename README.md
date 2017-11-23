@@ -60,6 +60,10 @@ override func viewDidAppear(_ animated: Bool) {
 }
 ```
 
+## Installation
+
+Copy the snippets to `~/Library/Developer/Xcode/UserData/CodeSnippets`.
+
 ## Author
 
 Artem Novichkov, novichkoff93@gmail.com
