@@ -1,15 +1,64 @@
 # Xcode Snippets
 My personal Xcode snippets
 ## List
-- Delay for calling
-- Lazy Button Declaration
-- Lazy Label Declaration
-- Lazy Table View Declaration
-- Lazy TableViewManager Declaration
-- Mark snippet
-- Protocol Function Declaration
-- Swift Singleton Declaration
-- View Did Appear Declaration
+- Delay for calling (`async_after`)
+```swift
+DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+}
+```
+- Lazy Button Declaration (`lazy_button`)
+```swift
+private(set) lazy var button: UIButton = {
+    let button = UIButton()
+    button.setTitle("", for: .normal)
+    button.setTitleColor(.black, for: .normal)
+    button.addTarget(self, action: #selector(), for: .touchUpInside)
+    return button
+}()
+```
+- Lazy Label Declaration (`lazy_ll`)
+```swift
+private(set) lazy var titleLabel: UILabel = {
+    let label = UILabel()
+    label.font = .systemFont(ofSize: 17, weight: .regular)
+    label.textColor = .black
+    return label
+}()
+```
+- Lazy Table View Declaration (`lazy_table`)
+```swift
+private(set) lazy var tableView: UITableView = {
+    let tableView = UITableView()
+    tableView.tableFooterView = UIView()
+    return tableView
+}()
+```
+- Lazy [TableViewManager](https://github.com/rosberry/TableViewTools) Declaration (`lazy_tvm`)
+```swift
+fileprivate lazy var tableViewManager: TableViewManager = {
+    return TableViewManager(tableView: self.tableView)
+}()
+```
+- Mark snippet (`mark`)
+```swift
+// MARK: - Title
+```
+- Protocol Function Declaration (`funcp`)
+```swift
+func <#name#>(<#parameters#>)
+```
+- Swift Singleton Declaration (`shared`)
+```swift
+static let shared = <# class #>
+
+private init() {}
+```
+- View Did Appear Declaration (`viewDidAppear`)
+```swift
+override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+}
+```
 
 ## Author
 
