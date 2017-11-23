@@ -1,7 +1,7 @@
 # Xcode Snippets
 My personal Xcode snippets
 ## Usage
-- Associated Object Declaration
+- Associated Object Declaration (`associated_object`)
 ```swift
 private struct AssociatedKeys {
     static var <#name#> = "<#name#>"
@@ -24,7 +24,7 @@ var <#name#>: String? {
 DispatchQueue.main.asyncAfter(deadline: .now() + <#when: dispatch_time_t#>) {
 }
 ```
-- Guard Self Declaration
+- Guard Self Declaration (`guard_self`)
 ```swift
 guard let `self` = self else {
     return
