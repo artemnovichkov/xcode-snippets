@@ -9,8 +9,8 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>fileprivate lazy var tableViewManager: TableViewManager = {
-        return TableViewManager(tableView: self.tableView)
+	<string>private(set) lazy var tableViewManager: TableViewManager = {
+        return TableViewManager(tableView: tableView)
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E178BC75-409A-4CE4-BA11-0D13CA8956AF</string>
